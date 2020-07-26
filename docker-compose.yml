@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+    telegram:
+        build: .
+        ports: 
+            - 3015:3015
+        environment: 
+            - BACKEND_URL=http://host.docker.internal/

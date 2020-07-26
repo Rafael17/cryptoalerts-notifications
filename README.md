@@ -1,5 +1,6 @@
-# Crypto Alerts - Telegram Service
-Poll Telegram API for messages to the assigned Bot and run web server that receives requests to notify users
+# Crypto Alerts - Notifications Service
+1. Poll Telegram API for messages to the assigned Bot
+2. Web server that receives messages to be sent to Telegarm or Alexa
 https://rafaelarcieri.com/
 
 ## Local Installation

@@ -2,19 +2,20 @@
   "name": "telegram",
   "version": "1.0.0",
   "description": "Telegram Service that polls the Telegram API for messages sent to bot and sends alerts to users",
-  "main": "server.js",
+  "main": "src/server.js",
   "dependencies": {
     "aws-sdk": "^2.719.0",
     "concurrently": "^5.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.4",
     "telegraf": "^3.38.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "dev": "concurrently \"nodemon src/server.js\" \"nodemon messagePoller.js\""
+    "dev": "concurrently \"nodemon src/server.js\" \"nodemon src/messagePoller.js\""
   },
   "author": "",
   "license": "ISC"
